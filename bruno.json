@@ -1,0 +1,8 @@
+{
+  "version": "1",
+  "name": "updown.io",
+  "type": "collection",
+  "ignore": [
+    ".git"
+  ]
+}

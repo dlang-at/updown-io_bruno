@@ -1,0 +1,19 @@
+auth {
+  mode: apikey
+}
+
+auth:apikey {
+  key: api-key
+  value: {{process.env.API_KEY}}
+  placement: queryparams
+}
+vars:pre-request {
+  api_url: https://updown.io/api
+}
+
+docs {
+  # updown.io REST API
+  
+  The official API documentation can be found here:
+  <https://updown.io/api>
+}
