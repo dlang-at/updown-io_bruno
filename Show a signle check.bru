@@ -1,0 +1,19 @@
+meta {
+  name: Show a signle check
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{api_url}}/checks/:token
+  body: none
+  auth: inherit
+}
+
+params:path {
+  token: 
+}
+
+settings {
+  encodeUrl: true
+}

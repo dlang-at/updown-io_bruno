@@ -1,0 +1,19 @@
+meta {
+  name: Get all the downtimes of a check
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{api_url}}/checks/:token/downtimes
+  body: none
+  auth: inherit
+}
+
+params:path {
+  token: 
+}
+
+settings {
+  encodeUrl: true
+}

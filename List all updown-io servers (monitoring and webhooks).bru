@@ -1,0 +1,15 @@
+meta {
+  name: List all updown-io servers (monitoring and webhooks)
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{api_url}}/nodes
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

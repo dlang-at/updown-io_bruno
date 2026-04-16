@@ -1,0 +1,15 @@
+meta {
+  name: List all updown-io servers IPv6 addresses
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{api_url}}/nodes/ipv6
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

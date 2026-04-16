@@ -1,0 +1,15 @@
+meta {
+  name: List all your checks
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{api_url}}/checks
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: List all your status pages
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{api_url}}/status_pages
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
