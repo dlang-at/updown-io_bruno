@@ -3,9 +3,9 @@ auth {
 }
 
 auth:apikey {
-  key: api-key
+  key: X-API-KEY
   value: {{process.env.API_KEY}}
-  placement: queryparams
+  placement: header
 }
 vars:pre-request {
   api_url: https://updown.io/api
